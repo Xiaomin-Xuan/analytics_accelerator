@@ -26,3 +26,19 @@ SELECT id, account_id, total_amt_usd
 FROM orders
 ORDER BY total_amt_usd DESC, account_id
 
+--Quiz Where 1
+SELECT *
+FROM orders
+WHERE gloss_amt_usd >= 1000
+LIMIT 5;
+
+--Quiz where 2
+SELECT *
+FROM orders
+WHERE total_amt_usd < 500
+LIMIT 10;
+
+--WHERE with Non-Numeric Data, double check the spellings always
+SELECT name, website, primary_poc
+FROM accounts
+WHERE name = 'Exxon Mobil';
